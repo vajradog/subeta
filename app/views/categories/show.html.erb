@@ -4,7 +4,7 @@
 <% @category.videos.each do |video| %>
   <div class="card">
     <div class="card-image">
-       <%= image_tag "https://img.youtube.com/vi/#{video.uid}/mqdefault.jpg" %>
+        <%= link_to image_tag("https://img.youtube.com/vi/#{video.uid}/mqdefault.jpg"), video_path(video), :data => { :no_turbolink => true }  %>
     </div>
     <div class="card-header">
       <%= link_to truncate(video.title, length: 35), video_path(video), :data => { :no_turbolink => true }  %>

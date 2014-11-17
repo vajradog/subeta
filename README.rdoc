@@ -1,3 +1,7 @@
+users/sign_in
+
+To ship immediately, we will only focus on the bare essentials.
+
 Bought the domain
 
 videos by youtube_it DONE
@@ -6,11 +10,11 @@ server passenger DONE
 heroku DONE
 Google analytics DONE
 
+authentication devise, DONE
+authorization 
 
-High Priority
-- authentication
-   devise, cancan,  omniauth
 
+  
 - Ability to post video BUT set in moderation
 
 - LAYOUT?
@@ -22,7 +26,11 @@ category pages
 
 
 TODO
+ cancan,  
+   omniauth
 
+
+- rating
 - To param
 - Tags or sub categories
 - comments

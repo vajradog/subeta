@@ -1,14 +1,25 @@
+
+
+<div class="cards">
 <% @category.videos.each do |video| %>
-<div class="comment">
-  <div class="comment-content">
-     <%= image_tag "https://img.youtube.com/vi/#{video.uid}/mqdefault.jpg" %>
-    <h1><%= link_to video.title, video_path(video), :data => { :no_turbolink => true } %></h1>
-    <small><%=simple_format video.description.truncate(200) %>
-
-    </small>
-    <p class="comment-detail"><%= link_to 'learn more', video_path(video) %></p>
-
+  <div class="card">
+    <div class="card-image">
+       <%= image_tag "https://img.youtube.com/vi/#{video.uid}/mqdefault.jpg" %>
+    </div>
+    <div class="card-header">
+      <%= link_to truncate(video.title, length: 35), video_path(video), :data => { :no_turbolink => true }  %>
+    </div>
+    <div class="card-copy">
+      <p><%= truncate(video.description, length: 100) %>.</p>
+    </div>
+    <!--
+    <div class="card-stats">
+      <ul>
+        <li><#%= video.likes %><span>Likes</span></li>
+        <li><#%= video.dislikes %><span>Dislikes</span></li>
+        <li>923<span>Objects</span></li>
+      </ul>
+    </div> -->
   </div>
+  <% end %>
 </div>
-<% end %>
-

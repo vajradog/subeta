@@ -30,7 +30,7 @@
        <%= link_to image_tag("https://img.youtube.com/vi/#{video.uid}/mqdefault.jpg"), video_path(video), :data => { :no_turbolink => true }  %>
     </div>
     <div class="card-header">
-      <%= link_to video.title, video_path(video), :data => { :no_turbolink => true }  %>
+      <%= link_to truncate(video.title, length: 35), video_path(video), :data => { :no_turbolink => true }  %>
     </div>
     <div class="card-copy">
       <p><%= truncate(video.description, length: 100) %>.</p>

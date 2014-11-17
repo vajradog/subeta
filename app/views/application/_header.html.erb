@@ -7,9 +7,11 @@
     <div class="nav">
       <ul id="navigation-menu">
         <li class="nav-link"><%= link_to 'Home', root_path %></li>
-        
-        <li class="nav-link"><a href="/1">Hair</a></li>
-        <li class="nav-link"><a href="javascript:void(0)">Outfit</a></li>
+        <li class="nav-link"><%= link_to 'MakeUp', category_path(1)%></li>
+        <li class="nav-link"><%= link_to 'OutFits', category_path(2)%></li>
+        <li class="nav-link"><%= link_to 'Hair', category_path(3)%></li>
+
+        <!--
         <li class="nav-link more"><a href="javascript:void(0)">More</a>
           <ul class="submenu">
             <li><a href="javascript:void(0)">Submenu Item</a></li>
@@ -30,7 +32,6 @@
         </li>
       </ul>
     </div>
-    <!-- not ready for search
     <div class="navigation-tools">
       <div class="search-bar">
         <div class="search-and-submit">

@@ -6,9 +6,7 @@
 
 body {
   @include outer-container;
-  $visual-grid: true !default;
-$visual-grid-index: front !default;
-$visual-grid-opacity: 0.4 !default;
+	margin-top: 0px;
 
 }
 

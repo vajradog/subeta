@@ -20,8 +20,9 @@ def create
 end
 
 def show
-	@video = Video.find(params[:id])	
-  @videos = Video.all
+	@video = Video.find(params[:id])
+  @category = @video.category(@video)
+  @videos = @category.videos.all
 end
 
 def edit

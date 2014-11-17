@@ -3,7 +3,6 @@ users/sign_in
 To ship immediately, we will only focus on the bare essentials.
 
 Bought the domain
-
 videos by youtube_it DONE
 categories DONE
 server passenger DONE
@@ -11,14 +10,10 @@ heroku DONE
 Google analytics DONE
 
 authentication devise, DONE
-authorization 
-
-
-  
-- Ability to post video BUT set in moderation
+authorization DONE
 
 - LAYOUT?
-category pages
+category pages DONE
 
 - remove footer and any identifying texts - NO NEED for NOW
 
@@ -26,10 +21,9 @@ category pages
 
 
 TODO
+Ability to post video BUT set in moderation
  cancan,  
    omniauth
-
-
 - rating
 - To param
 - Tags or sub categories

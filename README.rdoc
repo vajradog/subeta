@@ -2,14 +2,13 @@ Bought the domain
 
 videos by youtube_it DONE
 categories DONE
-
+server passenger DONE
+heroku DONE
 
 High Priority
 - authentication
    devise, cancan,  omniauth
 
-- server
-    unicorn
 
 - Ability to post video BUT set in moderation
 

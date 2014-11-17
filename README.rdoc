@@ -4,19 +4,21 @@ videos by youtube_it DONE
 categories DONE
 server passenger DONE
 heroku DONE
+Google analytics DONE
+
 
 High Priority
 - authentication
    devise, cancan,  omniauth
 
-
 - Ability to post video BUT set in moderation
 
 - LAYOUT?
+category pages
 
 - remove footer and any identifying texts - NO NEED for NOW
 
-- Google analytics
+
 
 
 TODO
@@ -25,4 +27,5 @@ TODO
 - Tags or sub categories
 - comments
 - flagging
+- video automatic next play
 

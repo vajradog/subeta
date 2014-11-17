@@ -1,0 +1,149 @@
+<header class="navigation">
+  <div class="navigation-wrapper">
+    <a href="javascript:void(0)" class="logo">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image">
+    </a>
+    <a href="" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+    <div class="nav">
+      <ul id="navigation-menu">
+        <li class="nav-link"><%= link_to 'Home', root_path %></li>
+        <li class="nav-link"><a href="javascript:void(0)">About Us</a></li>
+        <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>
+        <li class="nav-link more"><a href="javascript:void(0)">More</a>
+          <ul class="submenu">
+            <li><a href="javascript:void(0)">Submenu Item</a></li>
+            <li><a href="javascript:void(0)">Another Item</a></li>
+            <li class="more"><a href="javascript:void(0)">Item with submenu</a>
+              <ul class="submenu">
+                <li><a href="javascript:void(0)">Sub-submenu Item</a></li>
+                <li><a href="javascript:void(0)">Another Item</a></li>
+              </ul>
+            </li>
+            <li class="more"><a href="javascript:void(0)">Another submenu</a>
+              <ul class="submenu">
+                <li><a href="javascript:void(0)">Sub-submenu</a></li>
+                <li><a href="javascript:void(0)">An Item</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="navigation-tools">
+      <div class="search-bar">
+        <div class="search-and-submit">
+          <input type="search" placeholder="Enter Search" />
+          <button type="submit">
+            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png" alt="Search Icon">
+          </button>
+        </div>
+      </div>
+      <a href="javascript:void(0)" class="sign-up">Sign Up</a>
+    </div>
+  </div>
+</header>
+
+<br>
+<!-- For large video
+
+<div class="video">
+  <div class="video-wrapper">
+      <div id="player-wrapper"></div>
+  </div>
+</div>
+-->
+
+
+<section>
+    <head>
+  <link href='http://fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700italic,700,800,800italic' rel='stylesheet' type='text/css'>
+</head>
+
+<article class="type-system-serif">
+
+<!-- inside the article column -->
+<div class="video">
+  <div class="video-wrapper">
+      <div id="player-wrapper"></div>
+  </div>
+</div> <br>
+<!-- inside the article column -->
+  <h1><%= image_tag "https://img.youtube.com/vi/#{@video.uid}/mqdefault.jpg", size: "60x40", alt: @video.title, class: 'yt_preview', :"data-uid" => @video.uid%> <%= @video.title %></h1>
+  <p class="date"><%= @video.author %> | <%= @video.duration %> | <%= @video.category.name %></p>
+  <p><%=simple_format @video.description %>
+  </p>
+  
+  <hr>
+  <!--
+  <div class="comment">
+  <div class="comment-image">
+    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
+  </div>
+  <div class="comment-content">
+    <h1>First Comment Title or Author</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.</p>
+    <p class="comment-detail">Date or details about this post</p>
+  </div>
+</div>
+
+<div class="comment">
+  <div class="comment-image">
+    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2.png" alt="Logo image">
+  </div>
+  <div class="comment-content">
+    <h1>Another One</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.</p>
+    <p class="comment-detail">Date or details about this post</p>
+  </div>
+</div> -->
+
+</article>
+  <aside>
+
+  	<img src="https://img.youtube.com/vi/RuY4MSh1V-I/mqdefault.jpg">
+
+  <img src="https://img.youtube.com/vi/RuY4MSh1V-I/mqdefault.jpg">
+<img src="https://img.youtube.com/vi/RuY4MSh1V-I/mqdefault.jpg">
+<img src="https://img.youtube.com/vi/RuY4MSh1V-I/mqdefault.jpg">
+
+  <img src="https://img.youtube.com/vi/RuY4MSh1V-I/mqdefault.jpg">
+<img src="https://img.youtube.com/vi/RuY4MSh1V-I/mqdefault.jpg">
+<img src="https://img.youtube.com/vi/RuY4MSh1V-I/mqdefault.jpg">
+
+  <img src="https://img.youtube.com/vi/RuY4MSh1V-I/mqdefault.jpg">
+<img src="https://img.youtube.com/vi/RuY4MSh1V-I/mqdefault.jpg">
+</aside>
+
+</section>
+
+<footer class="footer">
+  <div class="footer-logo">
+    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image"><br>
+    <h2><font color="white">Style Upload</font></h2>
+  </div>
+  <div class="footer-links">
+    <ul>
+      <li><h3>Content</h3></li>
+      <li><a href="javascript:void(0)">About</a></li>
+      <li><a href="javascript:void(0)">Contact</a></li>
+      <li><a href="javascript:void(0)">Products</a></li>
+    </ul>
+    <ul>
+      <li><h3>Follow Us</h3></li>
+      <li><a href="javascript:void(0)">Facebook</a></li>
+      <li><a href="javascript:void(0)">Twitter</a></li>
+      <li><a href="javascript:void(0)">YouTube</a></li>
+    </ul>
+    <ul>
+      <li><h3>Legal</h3></li>
+      <li><a href="javascript:void(0)">Terms and Conditions</a></li>
+      <li><a href="javascript:void(0)">Privacy Policy</a></li>
+    </ul>
+  </div>
+
+  <hr>
+
+  <p>Disclaimer area lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nostrum repudiandae saepe.</p>
+</footer>

@@ -1,0 +1,15 @@
+<% @categories.each do |cat| %>
+<div class="comment">
+  <div class="comment-image">
+    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
+  </div>
+  <div class="comment-content">
+    <h1><%= link_to cat.name, category_path(cat) %></h1>
+    <p><%= pluralize(cat.videos.count, 'video') %>. 
+   <!-- <p class="comment-detail">Date or details about this post</p>-->
+  </div>
+</div>
+<% end %>
+
+<%= link_to 'New Category', new_category_path%>
+

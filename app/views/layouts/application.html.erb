@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Styletv</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+<script src="https://www.google.com/jsapi"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+</html>

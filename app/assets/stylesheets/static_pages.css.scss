@@ -1,0 +1,30 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+body {
+  @include outer-container;
+  $visual-grid: true !default;
+$visual-grid-index: front !default;
+$visual-grid-opacity: 0.4 !default;
+
+}
+
+.boxes {
+	 @include clearfix;
+}
+.box {
+	height: 100px;
+	background: tint(red, 30%);
+	width: 100px;
+	margin: 20px;
+	@include span-columns(3);
+}
+
+section {
+  @include outer-container;
+  aside { @include span-columns(3); }
+  article { @include span-columns(9); }
+}

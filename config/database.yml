@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: styletv_development
+  pool: 5
+  username: VajraCreations
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: styletv_test
+  pool: 5
+  username: VajraCreations
+  password:

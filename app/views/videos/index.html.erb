@@ -1,0 +1,95 @@
+<header class="navigation">
+  <div class="navigation-wrapper">
+    <a href="javascript:void(0)" class="logo">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image">
+    </a>
+    <a href="" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+    <div class="nav">
+      <ul id="navigation-menu">
+        <li class="nav-link"><%= link_to 'Home', root_path %></li>
+        <li class="nav-link"><a href="javascript:void(0)">MakeUp</a></li>
+        <li class="nav-link"><a href="javascript:void(0)">Hair</a></li>
+        <li class="nav-link"><a href="javascript:void(0)">Outfit</a></li>
+        <li class="nav-link more"><a href="javascript:void(0)">More</a>
+          <ul class="submenu">
+            <li><a href="javascript:void(0)">Submenu Item</a></li>
+            <li><a href="javascript:void(0)">Another Item</a></li>
+            <li class="more"><a href="javascript:void(0)">Item with submenu</a>
+              <ul class="submenu">
+                <li><a href="javascript:void(0)">Sub-submenu Item</a></li>
+                <li><a href="javascript:void(0)">Another Item</a></li>
+              </ul>
+            </li>
+            <li class="more"><a href="javascript:void(0)">Another submenu</a>
+              <ul class="submenu">
+                <li><a href="javascript:void(0)">Sub-submenu</a></li>
+                <li><a href="javascript:void(0)">An Item</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- not ready for search
+    <div class="navigation-tools">
+      <div class="search-bar">
+        <div class="search-and-submit">
+          <input type="search" placeholder="Enter Search" />
+          <button type="submit">
+            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png" alt="Search Icon">
+          </button>
+        </div>
+      </div>
+    -->
+      <a href="javascript:void(0)" class="sign-up">Sign Up</a>
+    </div>
+  </div>
+</header>
+
+
+
+<div class="jumbotron">
+  <div class="container">
+    <h1>Share your videos with the world!</h1>
+    <p>Click the button below to share your video from YouTube.</p>
+    <p>
+      <%= link_to 'Add video now!', new_video_path, class: 'btn btn-primary btn-lg' %>
+    </p>
+  </div>
+</div>
+
+
+
+<% if @videos.any? %>
+  <div class="container">
+    <h1>Latest videos</h1>
+
+    <!-- testing out -->
+
+    
+ 
+<div class="cards">
+<% @videos.each do |video| %>
+  <div class="card">
+    <div class="card-image">
+       <%= link_to image_tag("https://img.youtube.com/vi/#{video.uid}/mqdefault.jpg"), video_path(video), :data => { :no_turbolink => true }  %>
+    </div>
+    <div class="card-header">
+      <%= link_to video.title, video_path(video), :data => { :no_turbolink => true }  %>
+    </div>
+    <div class="card-copy">
+      <p><%= truncate(video.description, length: 100) %>.</p>
+    </div>
+    <!--
+    <div class="card-stats">
+      <ul>
+        <li><#%= video.likes %><span>Likes</span></li>
+        <li><#%= video.dislikes %><span>Dislikes</span></li>
+        <li>923<span>Objects</span></li>
+      </ul>
+    </div> -->
+  </div>
+  <% end %>
+</div>
+  
+<% end %>

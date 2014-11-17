@@ -1,0 +1,17 @@
+<%= form_for @video do |f| %>
+    <%= render 'shared/errors', object: @video %>
+ 
+    <div class="form-group">
+      <%= f.label :link %>
+      <%= f.text_field :link, class: 'form-control', required: true, placeholder: 'Paste a YouTube link' %>
+    </div>
+    <%= f.label :category_id %>
+	<%= f.collection_select :category_id, Category.all, :id, :name, include_blank: true %>
+
+	<!--<#%= f.label :new_category_name, 'create a category'%> -->
+	<!-- <#%= f.text_field :new_category_name, placeholder: "enter new category name here" %> -->
+
+
+ 
+    <%= f.submit class: 'btn btn-default' %>
+  <% end %>

@@ -1,0 +1,29 @@
+Bought the domain
+
+videos by youtube_it DONE
+categories DONE
+
+
+High Priority
+- authentication
+   devise, cancan,  omniauth
+
+- server
+    unicorn
+
+- Ability to post video BUT set in moderation
+
+- LAYOUT?
+
+- remove footer and any identifying texts - NO NEED for NOW
+
+- Google analytics
+
+
+TODO
+
+- To param
+- Tags or sub categories
+- comments
+- flagging
+

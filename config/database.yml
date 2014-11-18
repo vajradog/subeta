@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: styletv_development
+  database: bunintheoven_development
   pool: 5
   username: VajraCreations
   password:
@@ -9,7 +9,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: styletv_test
+  database: bunintheoven_test
   pool: 5
   username: VajraCreations
   password:

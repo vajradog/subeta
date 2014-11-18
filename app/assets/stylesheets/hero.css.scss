@@ -3,7 +3,7 @@
   $hero-background-bottom: #20392B;
   $hero-color: white;
   $gradient-angle: 10deg;
-  $hero-image: 'http://res.cloudinary.com/styleupload/image/upload/v1416246065/styleuploadtv/hero.png';
+  $hero-image: 'http://res.cloudinary.com/styleupload/image/upload/v1416281238/styleuploadtv/bunintheoven/hero.jpg';
 
   @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
 
